@@ -1,14 +1,14 @@
 include ../Makefile.defines.in
 
-APPS = test_float typecast
+APPS = strtype3 strtype4
 
 all:${APPS}
 
-test_float: test_float.o
-	${CC} ${CFLAGS} -o $@ test_float.o
+strtype3: strtype3.o
+	${CC} ${CFLAGS} -o $@ strtype3.o
 
-typecast: typecast.o
-	${CC} ${CFLAGS} -o $@ typecast.o
+strtype4: strtype4.o
+	${CC} ${CFLAGS} -o $@ strtype4.o
 
 clean:
 	rm -fr ${APPS} *.o
