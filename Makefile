@@ -11,3 +11,4 @@ clean:
 	make -C 09/ clean
 	make -C 10/ clean
 	make -C 11/ clean
+	make -C 12/ clean
