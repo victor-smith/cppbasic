@@ -5,7 +5,12 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <new> // memory map
 
-using namespace std;
+using std::cout;
+using std::cerr;
+using std::endl;
+using std::cin;
+using std::ostream;
 
 #define SIZE(X) cout<<#X<<"'s size is "<<sizeof(X)<<endl;
