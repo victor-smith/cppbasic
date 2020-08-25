@@ -2,7 +2,7 @@
 #include "tabtenn1.h"
 
 TableTennisPlayer::TableTennisPlayer(const char *fn , const char* ln ,
-				bool ht )
+				bool ht)
 {
 	strncpy(firstname, fn, LIM-1);
 	firstname[LIM-1] = '\0';
