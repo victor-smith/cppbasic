@@ -1,9 +1,12 @@
 include ../Makefile.defines.in
 
 CPPFLAGS += --std=c++11
-APPS = use_stuc use_stui
+APPS = worktest use_stuc use_stui
 
 all:${APPS}
+
+worktest: worktest.o worker0.o
+	${CC} ${CFLAGS} -o $@ worktest.o worker0.o
 
 use_stuc: use_stuc.o studentc.o
 	${CC} ${CFLAGS} -o $@ use_stuc.o studentc.o
